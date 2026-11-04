@@ -1,0 +1,6 @@
+# TP2 - Procesamiento de Imágenes I (IA 4.4)
+# Instalar con: pip install -r requirements.txt
+# Probado con opencv 5.0.0, numpy 2.2.6 y matplotlib 3.10.9 (Python 3).
+numpy          # imágenes como arrays, máscaras y promedios por objeto
+opencv-python  # Canny, morfología, HSV, Otsu, connectedComponentsWithStats, contornos
+matplotlib     # visualización de cada etapa del procesamiento
