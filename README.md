@@ -27,16 +27,10 @@ El Problema 2 detecta la patente en cada una de las doce imágenes `img<id>.png`
 ├── requirements.txt                Dependencias del proyecto.
 ├── problema1.py                    Problema 1: monedas y dados.
 ├── problema2.py                    Problema 2: patentes.
-├── generar_informe.py              Arma el PDF del informe con las capturas.
-├── Problema1_explicacion.md        Resolución paso a paso del Problema 1.
-├── Problema2_explicacion.md        Resolución paso a paso del Problema 2.
 ├── monedas.jpg                     Entrada del Problema 1.
 ├── img01.png ... img12.png         Entradas del Problema 2.
 ├── Factor de Forma.txt             Material de la cátedra (Problema 1).
-├── info_patentes.txt               Material de la cátedra (Problema 2).
-└── capturas/
-    ├── problema1/                  Figuras de cada etapa del Problema 1.
-    └── problema2/                  Figuras de cada etapa del Problema 2.
+└── info_patentes.txt               Material de la cátedra (Problema 2).
 ```
 
 Los dos scripts crean la carpeta `capturas/` si no existe y reescriben las figuras en cada ejecución.
@@ -49,7 +43,7 @@ Python 3.14.6. Es la versión con la que ejecutamos y verificamos los comandos d
 |---|---|---|
 | numpy | 2.5.3 | Arrays y operaciones sobre `stats` |
 | opencv-python | 5.0.0.93 | Canny, morfología, umbralado, componentes conectadas, contornos, K-means |
-| matplotlib | 3.11.2 | Figuras de cada etapa y PDF del informe |
+| matplotlib | 3.11.2 | Figuras de cada etapa |
 
 El archivo `requirements.txt` no fija versiones. En nuestro entorno estaba instalado `opencv-contrib-python` 5.0.0.93, que incluye todo lo de `opencv-python`.
 
@@ -112,6 +106,4 @@ MPLBACKEND=Agg python problema2.py
 
 ## Informe
 
-El informe está en [Informe_TP2_PDI_Grupo8.pdf](Informe_TP2_PDI_Grupo8.pdf). Se arma con `python generar_informe.py`, que usa las capturas ya generadas por los dos scripts.
-
-La resolución paso a paso de cada problema está en [Problema1_explicacion.md](Problema1_explicacion.md) y [Problema2_explicacion.md](Problema2_explicacion.md).
+El informe está en [Informe_TP2_PDI_Grupo8.pdf](Informe_TP2_PDI_Grupo8.pdf).
